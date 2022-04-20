@@ -2,7 +2,9 @@
 #include <iostream>
 #include <vector>
 
-using namespace std;
+using std::cin;
+using std::cout;
+using std::endl;
 
 std::vector<unsigned int> fib_below_n( unsigned int n )
 {
