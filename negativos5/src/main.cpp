@@ -9,12 +9,12 @@ int main(void)
     int num[SIZE], cont = 0, i = 0;
     
     for(i; i < SIZE; i++){
-        cin >> num[i];
+        std::cin >> num[i];
           if(num[i] < 0){
             cont++;
           }
       }
-  cout << cont;
+  std::cout << cont;
     
     return 0;
 }
