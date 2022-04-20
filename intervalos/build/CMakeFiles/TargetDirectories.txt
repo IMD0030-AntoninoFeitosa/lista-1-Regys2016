@@ -1,4 +1,0 @@
-/home/runner/lista-1-Regys2016/intervalos/build/CMakeFiles/rebuild_cache.dir
-/home/runner/lista-1-Regys2016/intervalos/build/CMakeFiles/program.dir
-/home/runner/lista-1-Regys2016/intervalos/build/CMakeFiles/edit_cache.dir
-/home/runner/lista-1-Regys2016/intervalos/build/CMakeFiles/verify.dir

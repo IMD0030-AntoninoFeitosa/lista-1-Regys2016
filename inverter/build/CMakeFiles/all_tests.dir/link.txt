@@ -1,1 +1,0 @@
-/usr/bin/c++    -rdynamic   -o all_tests libfunc.a 

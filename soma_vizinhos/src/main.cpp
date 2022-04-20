@@ -1,31 +1,27 @@
 #include <iostream>
-using std::cout;
 using std::cin;
+using std::cout;
 using std::endl;
 
-int main( void )
-{
-	int aux, m, n, soma;
-	
-	while ( cin >> std::ws >> m >> n )
-	{
+int soma(int x, int y){
+    int soma = 0;
+    if(x == 0)return y;
+    else{
+       for(int i = x; i <= y; i++){
+        soma = soma + i;
+        }
+    }
+    return soma;
+}
 
-	    soma = m;
-	    aux = m;
-	    if ( n > 0 ){
-	        while ( n > 1 ){
-	            soma = soma + (++aux);
-	            n--;
-	        }
-	    }
-	    if ( n < 0 ){
-	        n*=-1;
-	        while ( n > 1 ){
-	            soma = soma + (--aux);
-	            n--;
-	        }
-	    }
-	    cout << soma << endl;
-	}
+int main()
+{
+    int m, n, resultado;
+
+    cin >> m;
+    cin >> n;
+
+    resultado = soma(m, n);
+    cout << resultado;
     return 0;
 }
