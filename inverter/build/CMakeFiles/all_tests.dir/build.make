@@ -57,68 +57,16 @@ include CMakeFiles/all_tests.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/all_tests.dir/flags.make
 
-CMakeFiles/all_tests.dir/tests/lib/test_manager/src/test_manager.cpp.o: CMakeFiles/all_tests.dir/flags.make
-CMakeFiles/all_tests.dir/tests/lib/test_manager/src/test_manager.cpp.o: ../tests/lib/test_manager/src/test_manager.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/runner/lista-1-Regys2016/inverter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/all_tests.dir/tests/lib/test_manager/src/test_manager.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/all_tests.dir/tests/lib/test_manager/src/test_manager.cpp.o -c /home/runner/lista-1-Regys2016/inverter/tests/lib/test_manager/src/test_manager.cpp
-
-CMakeFiles/all_tests.dir/tests/lib/test_manager/src/test_manager.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/all_tests.dir/tests/lib/test_manager/src/test_manager.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/runner/lista-1-Regys2016/inverter/tests/lib/test_manager/src/test_manager.cpp > CMakeFiles/all_tests.dir/tests/lib/test_manager/src/test_manager.cpp.i
-
-CMakeFiles/all_tests.dir/tests/lib/test_manager/src/test_manager.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/all_tests.dir/tests/lib/test_manager/src/test_manager.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/runner/lista-1-Regys2016/inverter/tests/lib/test_manager/src/test_manager.cpp -o CMakeFiles/all_tests.dir/tests/lib/test_manager/src/test_manager.cpp.s
-
-CMakeFiles/all_tests.dir/tests/lib/test_manager/src/test_manager.cpp.o.requires:
-
-.PHONY : CMakeFiles/all_tests.dir/tests/lib/test_manager/src/test_manager.cpp.o.requires
-
-CMakeFiles/all_tests.dir/tests/lib/test_manager/src/test_manager.cpp.o.provides: CMakeFiles/all_tests.dir/tests/lib/test_manager/src/test_manager.cpp.o.requires
-	$(MAKE) -f CMakeFiles/all_tests.dir/build.make CMakeFiles/all_tests.dir/tests/lib/test_manager/src/test_manager.cpp.o.provides.build
-.PHONY : CMakeFiles/all_tests.dir/tests/lib/test_manager/src/test_manager.cpp.o.provides
-
-CMakeFiles/all_tests.dir/tests/lib/test_manager/src/test_manager.cpp.o.provides.build: CMakeFiles/all_tests.dir/tests/lib/test_manager/src/test_manager.cpp.o
-
-
-CMakeFiles/all_tests.dir/tests/main.cpp.o: CMakeFiles/all_tests.dir/flags.make
-CMakeFiles/all_tests.dir/tests/main.cpp.o: ../tests/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/runner/lista-1-Regys2016/inverter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/all_tests.dir/tests/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/all_tests.dir/tests/main.cpp.o -c /home/runner/lista-1-Regys2016/inverter/tests/main.cpp
-
-CMakeFiles/all_tests.dir/tests/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/all_tests.dir/tests/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/runner/lista-1-Regys2016/inverter/tests/main.cpp > CMakeFiles/all_tests.dir/tests/main.cpp.i
-
-CMakeFiles/all_tests.dir/tests/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/all_tests.dir/tests/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/runner/lista-1-Regys2016/inverter/tests/main.cpp -o CMakeFiles/all_tests.dir/tests/main.cpp.s
-
-CMakeFiles/all_tests.dir/tests/main.cpp.o.requires:
-
-.PHONY : CMakeFiles/all_tests.dir/tests/main.cpp.o.requires
-
-CMakeFiles/all_tests.dir/tests/main.cpp.o.provides: CMakeFiles/all_tests.dir/tests/main.cpp.o.requires
-	$(MAKE) -f CMakeFiles/all_tests.dir/build.make CMakeFiles/all_tests.dir/tests/main.cpp.o.provides.build
-.PHONY : CMakeFiles/all_tests.dir/tests/main.cpp.o.provides
-
-CMakeFiles/all_tests.dir/tests/main.cpp.o.provides.build: CMakeFiles/all_tests.dir/tests/main.cpp.o
-
-
 # Object files for target all_tests
-all_tests_OBJECTS = \
-"CMakeFiles/all_tests.dir/tests/lib/test_manager/src/test_manager.cpp.o" \
-"CMakeFiles/all_tests.dir/tests/main.cpp.o"
+all_tests_OBJECTS =
 
 # External object files for target all_tests
 all_tests_EXTERNAL_OBJECTS =
 
-all_tests: CMakeFiles/all_tests.dir/tests/lib/test_manager/src/test_manager.cpp.o
-all_tests: CMakeFiles/all_tests.dir/tests/main.cpp.o
 all_tests: CMakeFiles/all_tests.dir/build.make
 all_tests: libfunc.a
 all_tests: CMakeFiles/all_tests.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/runner/lista-1-Regys2016/inverter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable all_tests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/runner/lista-1-Regys2016/inverter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Linking CXX executable all_tests"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/all_tests.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -126,8 +74,7 @@ CMakeFiles/all_tests.dir/build: all_tests
 
 .PHONY : CMakeFiles/all_tests.dir/build
 
-CMakeFiles/all_tests.dir/requires: CMakeFiles/all_tests.dir/tests/lib/test_manager/src/test_manager.cpp.o.requires
-CMakeFiles/all_tests.dir/requires: CMakeFiles/all_tests.dir/tests/main.cpp.o.requires
+CMakeFiles/all_tests.dir/requires:
 
 .PHONY : CMakeFiles/all_tests.dir/requires
 

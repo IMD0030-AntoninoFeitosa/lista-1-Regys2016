@@ -5,7 +5,6 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/runner/lista-1-Regys2016/inverter/build/CMakeFiles/func.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

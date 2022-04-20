@@ -48,24 +48,13 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/runner/lista-1-Regys2016/inverter
+CMAKE_SOURCE_DIR = /home/runner/lista-1-Regys2016/soma_vizinhos
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/runner/lista-1-Regys2016/inverter/build
+CMAKE_BINARY_DIR = /home/runner/lista-1-Regys2016/soma_vizinhos/build
 
 #=============================================================================
 # Targets provided globally by CMake.
-
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
 
 # Special rule for the target rebuild_cache
 rebuild_cache:
@@ -78,11 +67,22 @@ rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
 
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
+
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/runner/lista-1-Regys2016/inverter/build/CMakeFiles /home/runner/lista-1-Regys2016/inverter/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/runner/lista-1-Regys2016/soma_vizinhos/build/CMakeFiles /home/runner/lista-1-Regys2016/soma_vizinhos/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/runner/lista-1-Regys2016/inverter/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/runner/lista-1-Regys2016/soma_vizinhos/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -111,70 +111,57 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named run_tests
+# Target rules for targets named program
 
 # Build rule for target.
-run_tests: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 run_tests
-.PHONY : run_tests
+program: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 program
+.PHONY : program
 
 # fast build rule for target.
-run_tests/fast:
-	$(MAKE) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/build
-.PHONY : run_tests/fast
+program/fast:
+	$(MAKE) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/build
+.PHONY : program/fast
 
 #=============================================================================
-# Target rules for targets named func
+# Target rules for targets named verify
 
 # Build rule for target.
-func: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 func
-.PHONY : func
+verify: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 verify
+.PHONY : verify
 
 # fast build rule for target.
-func/fast:
-	$(MAKE) -f CMakeFiles/func.dir/build.make CMakeFiles/func.dir/build
-.PHONY : func/fast
+verify/fast:
+	$(MAKE) -f CMakeFiles/verify.dir/build.make CMakeFiles/verify.dir/build
+.PHONY : verify/fast
 
-#=============================================================================
-# Target rules for targets named all_tests
+src/main.o: src/main.cpp.o
 
-# Build rule for target.
-all_tests: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 all_tests
-.PHONY : all_tests
-
-# fast build rule for target.
-all_tests/fast:
-	$(MAKE) -f CMakeFiles/all_tests.dir/build.make CMakeFiles/all_tests.dir/build
-.PHONY : all_tests/fast
-
-src/function.o: src/function.cpp.o
-
-.PHONY : src/function.o
+.PHONY : src/main.o
 
 # target to build an object file
-src/function.cpp.o:
-	$(MAKE) -f CMakeFiles/func.dir/build.make CMakeFiles/func.dir/src/function.cpp.o
-.PHONY : src/function.cpp.o
+src/main.cpp.o:
+	$(MAKE) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
 
-src/function.i: src/function.cpp.i
+src/main.i: src/main.cpp.i
 
-.PHONY : src/function.i
+.PHONY : src/main.i
 
 # target to preprocess a source file
-src/function.cpp.i:
-	$(MAKE) -f CMakeFiles/func.dir/build.make CMakeFiles/func.dir/src/function.cpp.i
-.PHONY : src/function.cpp.i
+src/main.cpp.i:
+	$(MAKE) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
 
-src/function.s: src/function.cpp.s
+src/main.s: src/main.cpp.s
 
-.PHONY : src/function.s
+.PHONY : src/main.s
 
 # target to generate assembly for a file
-src/function.cpp.s:
-	$(MAKE) -f CMakeFiles/func.dir/build.make CMakeFiles/func.dir/src/function.cpp.s
-.PHONY : src/function.cpp.s
+src/main.cpp.s:
+	$(MAKE) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
 
 # Help Target
 help:
@@ -182,14 +169,13 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... edit_cache"
-	@echo "... run_tests"
 	@echo "... rebuild_cache"
-	@echo "... func"
-	@echo "... all_tests"
-	@echo "... src/function.o"
-	@echo "... src/function.i"
-	@echo "... src/function.s"
+	@echo "... program"
+	@echo "... edit_cache"
+	@echo "... verify"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
 .PHONY : help
 
 
