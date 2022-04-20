@@ -1,4 +1,5 @@
 #include "function.h"
+#include<iostream>
 
 /*! 
  * Verifica se um ponto está dentro de um retângulo.
