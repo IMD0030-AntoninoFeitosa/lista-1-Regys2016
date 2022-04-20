@@ -6,7 +6,6 @@ using std::cin;
 using std::endl;
 using std::setprecision;
 
-
 int main(void)
 {
   int x;
