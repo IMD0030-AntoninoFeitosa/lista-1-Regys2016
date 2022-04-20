@@ -15,6 +15,5 @@ int main(void)
           }
       }
   std::cout << cont;
-    
-    return 0;
+  return 0;
 }
